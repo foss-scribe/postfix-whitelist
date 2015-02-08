@@ -1,0 +1,8 @@
+#This file is an extract only!!!!
+#Add the following to your main.cf file accordingly
+
+smtpd_recipient_restrictions = your_config_options_here,
+        mysql:/etc/postfix/protected_users.cf
+
+smtpd_restriction_classes = whitelist
+whitelist = check_sender_access mysql:/etc/postfix/whitelist.cf, reject

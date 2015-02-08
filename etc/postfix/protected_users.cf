@@ -1,0 +1,7 @@
+dbname = your_postfix_db_name
+hosts = your_hostname
+user = your_db_username
+password = your_db_password
+table = protected_users
+select_field = class
+where_field = recipient

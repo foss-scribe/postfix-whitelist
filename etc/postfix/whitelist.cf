@@ -1,0 +1,7 @@
+dbname = your_postfix_db_name
+hosts = your_hostname
+user = your_db_username
+password = your_db_password
+table = whitelist
+select_field = action
+where_field = sender
